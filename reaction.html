@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Use of setTimeout</title>
+  <title>Timeout Webpage</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -11,24 +11,23 @@
 </head>
 <body>
 
-  <h2>Prudhvidhar Reddy Gopireddy reaction timer</h2>
+  <h2>Prudhvidhar Reddy Gopireddy Reaction Timer</h2>
 
-  <button type="button" class="btn btn-primary" onclick="startTime()"> Start Timer </button>
-  <button type="button" class="btn btn-danger" onclick="recordReact()">React Now</button>
-  
-  <p id="target">Your time </p>
-  <p id="countdown">Count</p>
+  <div id="target">Your time </div>
+  <div id="countdown">Count </div>
 
-  <script> 
-    var myTime = undefined
-    function recordReact() {
-       myTime=Date.now();
+  <button type="button" class="btn btn-primary" onclick="startTime()">Start Timer</button>
+  <button type="button" class="btn btn-primary" onclick="recordReact()">React Now</button>
+
+  <script>
+      var myTime = undefined
+      function recordReact() 
+      {
+       myTime = Date.now();
        console.log("Current time in milliseconds is "+ myTime)
-    
-    }
-  
-    function startTime()
-    {
+      }
+      function startTime()
+      {
         for(let i=0;i<4;i++)
         {
           setTimeout(()=>{
@@ -49,8 +48,6 @@
        }
       }, 3000)
     }
-  
-    </script>
-  
-</body>
-</html>
+  </script>
+  </body>
+  </html>
