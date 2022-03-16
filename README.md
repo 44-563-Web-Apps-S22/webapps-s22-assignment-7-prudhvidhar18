@@ -1,2 +1,4 @@
-# WebApps-S22-Assignment-7
-An assignment on java script modifying the DOM and using anonymous callback functions.
+
+ https://44-563-web-apps-s22.github.io/webapps-s22-assignment-7-prudhvidhar18/hunt.html
+ https://44-563-web-apps-s22.github.io/webapps-s22-assignment-7-prudhvidhar18/reaction.html
+ https://44-563-web-apps-s22.github.io/webapps-s22-assignment-7-prudhvidhar18/queue.html
