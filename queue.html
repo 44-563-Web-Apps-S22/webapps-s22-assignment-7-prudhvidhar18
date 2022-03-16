@@ -83,6 +83,19 @@
             }
         }
     }
+
+    function unique(){
+        var queueItems = document.getElementsByClassName("queue")
+		for(var i=0; i<queueItems.length; i++){
+			for(var j=i+1; j<queueItems.length; j++){
+                if(queueItems[i].innerHTML == queueItems[j].innerHTML){
+                    queueItems[j].remove()
+                    i--
+                    break
+                }
+            }
+		}
+    }
 </script>
 
 </html>
